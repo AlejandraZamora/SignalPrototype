@@ -1,0 +1,83 @@
+<div ng-controller="templatePatientCtrl">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Multiple Client</a>
+        </div>
+        <!-- /.navbar-header -->
+
+        <ul class="nav navbar-top-links navbar-right">
+            <li><a ng-click="continuePerfil()"><i class="fa fa-user fa-fw"></i> Perfil </a>
+            </li>
+            <li><a ng-click="continueLogout()"><i class="fa fa-sign-out fa-fw"></i> Cerrar Sesion</a>
+            </li>
+        </ul>
+        <!-- /.navbar-top-links -->
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a ng-click="continueHome()"><i class="fa fa-dashboard fa-fw"></i>Inicio</a>
+                    </li>
+        			<li>
+        			<a ng-click="continueCommentsFeedbacks()"><i class="fa fa-edit fa-fw"></i> Comentarios para Feedbacks</a>
+        			</li>
+        			<li>
+        			<a ng-click="continueCommentsAdvices()"><i class="fa fa-edit fa-fw"></i> Comentarios para Advices</a>
+        			</li>
+                    <li>
+                        <a><i class="fa fa-bar-chart-o fa-fw"></i> Registros de Diagnostico</a>
+                        <ul class="nav nav-second-level">
+                        	<li>
+                        	<a ng-click="continueCRegisterHeartHealth()">Nuevo Registro HeartHealth</a>
+                        	</li>
+                        	<li>
+                        	<a ng-click="continueCViewHeartHealth()">Consultar Registros HeartHealth</a>
+                        	</li>
+                        	<li>
+                        	<a ng-click="continueCRegisterArmAngles()">Nuevo Registro ArmAngles</a>
+                        	</li>
+                        	<li>
+                        	<a ng-click="continueCViewArmAngles()">Consultar Registros ArmAngles</a>
+                        	</li>
+                        	<li>
+                        	<a ng-click="continueCRegisterLegAngles()">Nuevo Registro LegAngles</a>
+                        	</li>
+                        	<li>
+                        	<a ng-click="continueCViewLegAngles()">Consultar Registros LegAngles</a>
+                        	</li>
+                        	<li>
+                        	<a ng-click="continueCRegisterPhysicalActivities()">Nuevo Registro PhysicalActivities</a>
+                        	</li>
+                        	<li>
+                        	<a ng-click="continueCViewPhysicalActivities()">Consultar Registros PhysicalActivities</a>
+                        	</li>
+                        	<li>
+                        	<a ng-click="continueCRegisterEscalaNHISS()">Nuevo Registro EscalaNHISS</a>
+                        	</li>
+                        	<li>
+                        	<a ng-click="continueCViewEscalaNHISS()">Consultar Registros EscalaNHISS</a>
+                        	</li>
+                        	<li>
+                        	<a ng-click="continueSignalViewBloodOxygenSignal()">Ver BloodOxygenSignal en tiempo real</a>
+                        	</li>
+                        	<li>
+                        	<a ng-click="continueSignalViewECGSignal()">Ver ECGSignal en tiempo real</a>
+                        	</li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+</div>

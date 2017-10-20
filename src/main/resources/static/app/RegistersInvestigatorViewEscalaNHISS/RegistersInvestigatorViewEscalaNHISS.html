@@ -1,0 +1,93 @@
+<div ng-include="'/app/Templates/templateInvestigator.html'"></div>
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">Datos de control del estudio EscalaNHISS</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Datos Promedio por cada Dato Capturado
+                </div>
+                <div class="panel-body">
+                    <canvas  id="todoData" class="chart chart-bar"
+                             chart-data="todoData" chart-labels="todoLabels" chart-series="series">
+                    </canvas>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    <div class="row">
+    </div>
+    	<div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Datos totales de cada control de los participantes del estudio.
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                    	<label>Filtrar por: </label>
+						<input type="text" ng-model="busqueda">
+                        <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            <thead>
+                            <tr>
+                            	<th>Identificador</th>
+								<th>Nombre</th>
+<th>Date</th>
+<th>SynthomsBegin</th>
+<th>NivelDeConciencia</th>
+<th>OrdenesMotoras</th>
+<th>MiradaConjugada</th>
+<th>CamposVisuales</th>
+<th>ParesiaFacial</th>
+<th>ParesiaDeBrazoIzquierdo</th>
+<th>ParesiaDeBrazoDerecho</th>
+<th>ParesiaDePiernaIzquierda</th>
+<th>ParesiaDePiernaDerecha</th>
+<th>AtaxiaDeLasExtremidades</th>
+<th>Sensibilidad</th>
+<th>Lenguaje</th>
+<th>Disartria</th>
+<th>ExtincionNegligenciaInatencion</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="d in principalAndDiagnostic | filter: busqueda" >
+                            	<td>{{d[0]}}</td>
+								<td>{{d[1]}}</td>
+<td>{{d[2] | date:"dd/MMMM/yyyy"}}</td>
+<td>{{d[3] | date:"dd/MMMM/yyyy"}}</td>
+<td>{{d[4]}}</td>
+<td>{{d[5]}}</td>
+<td>{{d[6]}}</td>
+<td>{{d[7]}}</td>
+<td>{{d[8]}}</td>
+<td>{{d[9]}}</td>
+<td>{{d[10]}}</td>
+<td>{{d[11]}}</td>
+<td>{{d[12]}}</td>
+<td>{{d[13]}}</td>
+<td>{{d[14]}}</td>
+<td>{{d[15]}}</td>
+<td>{{d[16]}}</td>
+<td>{{d[17]}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!-- /.table-responsive -->
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+</div>
+<!-- /#page-wrapper -->
