@@ -39,7 +39,7 @@ Este se puede usar así:
 
 | Nombre | Tipo | Descripción |
 | :----- | :--- | :---------- |
-| *patientd* | **Long**| Número de identificación de la persona o paciente. |
+| *patientId* | **Long**| Número de identificación de la persona o paciente. |
 
 ____
 
