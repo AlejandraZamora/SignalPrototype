@@ -74,10 +74,10 @@ _______
 _______
 
 Para realizar el proceso es necesario contar previamente con:
-- git ([descarga en](https://git-scm.com/downloads))
-- maven ([descarga en](https://maven.apache.org/download.cgi))
-- bower ([descarga en](https://bower.io/#install-bower))
-- heroku ([descarga en](https://devcenter.heroku.com/articles/heroku-cli))
+- git ([descargar](https://git-scm.com/downloads))
+- maven ([descargar](https://maven.apache.org/download.cgi))
+- bower ([descargar](https://bower.io/#install-bower))
+- heroku ([descargar](https://devcenter.heroku.com/articles/heroku-cli))
 - Tener una cuenta activa en Heroku y en GitHub
 
 _______
